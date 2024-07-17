@@ -1,0 +1,119 @@
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  --font-size: 14px;
+
+  --spacing-big: 24px;
+  --spacing-medium: 12px;
+  --spacing-small: 6px;
+
+}
+
+body {
+    background-color: var(--color-grey-900);
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 90vh;
+}
+
+.card-container {
+    border-radius: 15px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size);
+    font-weight: 400;
+
+    background-color: var(--color-grey-800);
+    
+    padding: var(--spacing-big);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container__header {
+    text-align: center;
+}
+
+.card-container__header img {
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: var(--spacing-big);
+}
+
+.card-container__header h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0px 0px var(--spacing-small) 0px;
+}
+
+.card-container__header h2 {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--color-green);
+    margin: 0px;
+}
+
+.card-container__header p {
+    font-size: 0.9em;
+    margin: var(--spacing-big) 0px;
+}
+
+.card-container__button {
+    width: 90%;
+
+    background-color: var(--color-grey-700);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: none;
+
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+    padding: var(--spacing-medium);
+}
+
+.card-container__button p {
+    margin: 0px;
+}
+
+.card-container__button:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-700);
+    cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 1vh;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.separator {
+    height: var(--spacing-medium);
+}
